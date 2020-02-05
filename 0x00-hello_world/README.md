@@ -1,0 +1,1 @@
+# This folder stores tasks belonging to the basic C project
