@@ -1,3 +1,4 @@
+int add(int, int);
 int _abs(int);
 int _putchar(char c);
 int _islower(int c);
