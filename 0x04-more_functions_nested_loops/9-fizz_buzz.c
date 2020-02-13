@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main
+ * main - Fizz Buzzinf from 1 to 100
  *
- *
+ * Return: Always 0
  */
 int main(void)
 {
