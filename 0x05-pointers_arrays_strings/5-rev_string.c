@@ -32,7 +32,7 @@ void rev_string(char *s)
 
 	i = _strlen(s);
 	i--;
-	for(j = 0; j < i; j++)
+	for (j = 0; j < i; j++)
 	{
 		p = s[i];
 		s[i] = s[j];
