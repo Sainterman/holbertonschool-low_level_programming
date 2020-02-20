@@ -1,9 +1,12 @@
 /**
  * _strcmp - comparre string @s1 with string @s2
  *
+ * @s1: address of string to be compared with string @s2
  *
+ * @s2: address of string to be comp with @s1
  *
- *
+ * Return: difference between ascii values where the string differs or 0 if
+ * is the same
  */
 int _strcmp(char *s1, char *s2)
 {
