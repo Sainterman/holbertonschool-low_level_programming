@@ -1,9 +1,9 @@
 /**
+ * string_toupper - change lowercase characters to uppercase
  *
+ * @str: address string to cnvert to uppercase
  *
- *
- *
- *
+ * Return: Address of the string converted
  *
  */
 
