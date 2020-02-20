@@ -1,10 +1,16 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
+ * _strncpy - copy @n bytes from string on @src into @dest,
+ * if @dest size < @n then put '\0' character
  *
+ * @dest: address of destiny string
  *
+ * @src: Address of string to copy @n bytes from to @dest
  *
+ * @n: Number of bytes or chars to be copied into @dest
  *
+ * Return: @dest
  */
 
 char *_strncpy(char *dest, char *src, int n)
@@ -17,5 +23,5 @@ char *_strncpy(char *dest, char *src, int n)
 	for ( ; i < n; i++)
 		dest[i] = '\0';
 	printf("Debugueando perro: %s", dest);
-	return dest;
+	return (dest);
 }
