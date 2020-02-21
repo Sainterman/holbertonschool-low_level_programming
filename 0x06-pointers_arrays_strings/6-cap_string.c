@@ -6,18 +6,15 @@
 char *cap_string(char *str)
 {
 	int i, j;
-	char space[] = {32, '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')',
+	char space[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')',
 			'}', '{' };
 
-	i = 0;
-	j = 0;
-
-	while(str[i] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (i == 0 && (str[i] >= 'a' && str[i] <= 'z'))
 			str[i] -= 32;
 
-		for (; j <= 12; j++)
+		for (j = 0; j <= 12; j++)
 		{
 			if (space[j] == str[i])
 			{
@@ -27,7 +24,6 @@ char *cap_string(char *str)
 				}
 			}
 		}
-		i++;
 	}
 
 	return (str);
