@@ -1,11 +1,11 @@
 /**
- * -strspn - gets the length of a prefix substring.
+ * _strspn - gets the length of a prefix substring.
  *
  * @s: pointer to string to compare it's prefix substring
  * @accept: pointer to string that contains characters
  *
- * Return: Returns the number of bytes in the initial segment of s which consist
- * only of bytes from accept
+ * Return: Returns the number of bytes in the initial segment of @s which
+ * consist only of bytes from @accept
  */
 unsigned int _strspn(char *s, char *accept)
 {
