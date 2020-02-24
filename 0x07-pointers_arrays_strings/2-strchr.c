@@ -1,5 +1,5 @@
 /**
- * _strchar - locates a character in a string.
+ * _strchr - locates a character in a string.
  *
  * @s: pointer to first char on string
  * @c: char to be found in @s string
