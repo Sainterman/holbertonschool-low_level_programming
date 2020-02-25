@@ -1,6 +1,6 @@
 /**
- * _strpbrk - The _strpbrk() function locates the first occurrence in the string
- * s of any of the bytes in the string accept
+ * _strpbrk - The _strpbrk() function locates the first occurrence in the
+ * string s of any of the bytes in the string accept
  *
  * @s: pointer to first char in string to locate the first ocurrence
  * @accept: pointer to string to compare from
@@ -15,7 +15,8 @@ char *_strpbrk(char *s, char *accept)
 	char *p;
 
 	for (i = 0; s[i]; i++)
-	{	for (j = 0; accept[j]; j++)
+	{
+		for (j = 0; accept[j]; j++)
 		{
 			if (s[i] == accept[j])
 			{
