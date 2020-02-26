@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
+ * print_chessboard - function that prints the chessboard.
  *
- *
- *
+ * @a: pointer to first place of array size 8
  *
  */
 
