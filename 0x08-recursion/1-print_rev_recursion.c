@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * _print_rev_recursion
+ * _print_rev_recursion - print string in reverse using recursion
  *
- *
+ * @s: pointer to beggining of string
  */
 void _print_rev_recursion(char *s)
 {
