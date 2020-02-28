@@ -12,11 +12,8 @@ int test(int s, int j)
 		return (j);
 	else if (j >= s)
 		return (-1);
-	else
-	{
-		j++;
-		return (test(s, j++));
-	}
+	j++;
+	return (test(s, j++));
 }
 /**
  * _sqrt_recursion - calculates square rtoot of integer number if rational sqrt
