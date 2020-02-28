@@ -1,0 +1,1 @@
+# Creating libraries, concepts about static and dynamic libraries
