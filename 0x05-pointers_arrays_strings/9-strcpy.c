@@ -3,18 +3,17 @@
  *
  * @dest: pointer where to copy string @src
  * @src: address of string to copy
- * Retun: @dest
+ * Return: @dest
  */
 
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
 
-	while (*src)
+	while (src[i])
 	{
-		*(dest + i) = *src;
+		*(dest + i) = src[i];
 		i++;
-		src++;
 	}
 
 	return (dest);
