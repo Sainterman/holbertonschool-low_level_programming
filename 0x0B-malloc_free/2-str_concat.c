@@ -9,8 +9,10 @@ char *str_concat(char *s1, char *s2)
 	i = 0;
 	j = 0;
 
-	if (s1 == NULL || s2 == NULL)
-		return (NULL);
+	if (s1 == NULL) 
+		s1 = "";
+	if(s2 == NULL)
+		s2 = "";
 
 	while (s1[i] != '\0')
 		i++;
