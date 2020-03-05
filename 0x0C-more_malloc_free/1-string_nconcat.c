@@ -49,6 +49,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	lengthS1 = _strlen(s1);
 	lengthS2 = _strlen(s2);
+
 	if (lengthS2 > n)
 		lengthS2 = n;
 
@@ -72,7 +73,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			j++;
 		}
 	}
-
+	concatenated[j] = '\0';
 
 	return (concatenated);
 }
