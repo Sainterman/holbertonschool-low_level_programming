@@ -39,14 +39,14 @@ unsigned int _strlen(char *s)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *concatenated;
-	unsigned int size, i, lengthS1, lengthS2;
-	
+	unsigned int size, j, i, lengthS1, lengthS2;
 
 	if (s1 == NULL)
 		s1 = "";
 
 	if (s2 == NULL)
 		s2 = "";
+
 	lengthS1 = _strlen(s1);
 	lengthS2 = _strlen(s2);
 	if (lengthS2 > n)
@@ -59,13 +59,20 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (!concatenated)
 		return (NULL);
 
+	j = 0;
+
 	for (i = 0; i < size; i++)
 	{
+
 		if (i < lengthS1)
 			concatenated[i] = s1[i];
 		else
-			concatenated[i] = s2[i - lengthS1];
+		{
+			concatenated[i] = s2[j];
+			j++;
+		}
 	}
+
 
 	return (concatenated);
 }
