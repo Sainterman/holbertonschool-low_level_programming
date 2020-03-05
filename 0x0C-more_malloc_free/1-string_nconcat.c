@@ -73,7 +73,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			j++;
 		}
 	}
-	concatenated[j] = '\0';
+	concatenated[i] = '\0';
 
 	return (concatenated);
 }
