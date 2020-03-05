@@ -16,9 +16,9 @@ void *malloc_checked(unsigned int b)
 {
 	void *allocatedmeme;
 
-	allocatedmeme = malloc (b);
+	allocatedmeme = malloc(b);
 	if (allocatedmeme == NULL)
-		exit (98);
+		exit(98);
 
 	return (allocatedmeme);
 }
