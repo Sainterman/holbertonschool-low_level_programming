@@ -17,7 +17,6 @@ unsigned int _strlen(char *s)
 	{
 		i++;
 	}
-	i--;
 	return (i);
 }
 
@@ -47,13 +46,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		size = _strlen(s2) + _strlen(s1) + 1;
 	}
 	else
-		size = _strlen(s1) + n + 1;
+		size = _strlen(s1) + n;
 
 	if (s1 == NULL)
-		*s1 = "";
+		s1 = "";
 
 	if (s2 == NULL)
-		*s2 = "";
+		s2 = "";
 
 	concatenated = malloc(sizeof(char) * size);
 
