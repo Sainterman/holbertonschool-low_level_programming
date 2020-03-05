@@ -8,9 +8,9 @@
  * Return: integer length of a string.
  */
 
-int _strlen(char *s)
+unsigned int _strlen(char *s)
 {
-	int i;
+	unsigned int i;
 
 	i = 0;
 	while (*(s + i) != '\0')
@@ -38,6 +38,7 @@ int _strlen(char *s)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
+	int i;
 	char *concatenated;
 	unsigned int size;
 
