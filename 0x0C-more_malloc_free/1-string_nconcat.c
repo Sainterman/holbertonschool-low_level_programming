@@ -66,7 +66,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		else
 			concatenated[i] = s2[i - _strlen(s2)];
 	}
-	concatenated[i] = '\0';
 
 	return (concatenated);
 }
