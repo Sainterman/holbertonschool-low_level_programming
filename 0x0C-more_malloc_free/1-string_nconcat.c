@@ -39,7 +39,7 @@ unsigned int _strlen(char *s)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *concatenated;
-	unsigned int size, j, i, lengthS1, lengthS2;
+	unsigned int j, i, lengthS1, lengthS2;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -53,27 +53,20 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (lengthS2 > n)
 		lengthS2 = n;
 
-	size  = lengthS1 + lengthS2;
-
-	concatenated = malloc(sizeof(char) * size);
+	concatenated = malloc(sizeof(char) * (lengthS1 + lengthS2) + 1);
 
 	if (!concatenated)
 		return (NULL);
 
 	j = 0;
 
-	for (i = 0; i < size; i++)
-	{
+	for (i = 0; i < lengthS1; i++)
+		concatenated[i] = s1[i];
 
-		if (i < lengthS1)
-			concatenated[i] = s1[i];
-		else
-		{
-			concatenated[i] = s2[j];
-			j++;
-		}
-	}
-	concatenated[i] = '\0';
+	for (j = 0; j < lengthS2; j++)
+		concatenated[i + j] = s2[j];
+
+	concatenated[i + j] = '\0';
 
 	return (concatenated);
 }
