@@ -28,6 +28,7 @@ int **alloc_grid(int width, int height)
 			{
 				free(matrix[j]);
 			}
+			free(matrix);
 			return (NULL);
 		}
 
