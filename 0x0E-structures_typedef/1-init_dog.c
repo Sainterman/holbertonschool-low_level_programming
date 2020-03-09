@@ -1,6 +1,7 @@
 #include "dog.h"
 /**
  * init_dog - initialize a dog type variable with @name, @age, @owner
+ * @d: Address of structure dog
  * @name: Name of the doggy
  * @age: Doggy's name
  * @owner: owner of the dog
