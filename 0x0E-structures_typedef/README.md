@@ -1,0 +1,1 @@
+# this project has files related to structures and typedef
