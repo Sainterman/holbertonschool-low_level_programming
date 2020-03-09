@@ -1,7 +1,7 @@
 #ifndef DOG
 #define DOG
 /**
- * dog - structure that has 3 elements @name, @owner, @age
+ * struct dog - structure that has 3 elements @name, @owner, @age
  * @name: name of the dawg
  * @owner: owner of the dawg
  * @age: good boy's age
