@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * print_name - prints a name
- * @name:
+ * @name: pointer to string to be printed by function @f
  * @f: address of function, pointer to function
  *
  */
