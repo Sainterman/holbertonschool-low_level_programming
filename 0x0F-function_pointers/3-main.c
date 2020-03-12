@@ -4,7 +4,7 @@
 /**
  * main - Calculate operation between 2 integers
  * @argc: Bumber of args
- * @arv: string of args
+ * @argv: string of args
  *
  * Return: 0
  */
@@ -20,11 +20,11 @@ int main(int argc, char *argv[])
 	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	operation  = get_op_fun(argv[2]);
+	operation = get_op_fun(argv[2]);
 	if (operation == NULL)
 	{
 		printf("Error\n");
-		exit (99);
+		exit(99);
 	}
 
 	answer = operation(num1, num2);
