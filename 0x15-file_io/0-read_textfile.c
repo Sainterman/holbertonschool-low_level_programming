@@ -1,8 +1,6 @@
 #include "holberton.h"
-#include <unistd.h>
 /**
  * read_textfile - reads a text file and prints it to
- * the POSIX standard output.
  * @filename: address of name of file
  * @letters: amount of letters to read and print
  * Return: amount of letters read and wrote in the POSIX standard output
@@ -10,7 +8,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd, count, readChars, i;
-	char *aux = malloc(sizeof(char) * letters);
+	char *aux = malloc(sizeof(char) * (letters + 1));
 
 	if (aux == NULL)
 		return (0);
@@ -22,7 +20,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(aux);
 		return (0);
 	}
-	readChars = read(fd, (void *)aux, letters);
+	readChars = read(fd, (void *)aux, (letters + 1));
 	if (readChars == -1)
 	{
 		free(aux);
