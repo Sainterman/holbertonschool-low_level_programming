@@ -8,7 +8,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd, count, readChars, i;
-	char *aux = malloc(sizeof(char) * (letters + 1));
+	char *aux = malloc(sizeof(char) * (letters));
 
 	if (aux == NULL)
 		return (0);
@@ -20,7 +20,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(aux);
 		return (0);
 	}
-	readChars = read(fd, (void *)aux, (letters + 1));
+	readChars = read(fd, (void *)aux, (letters));
 	if (readChars == -1)
 	{
 		free(aux);
